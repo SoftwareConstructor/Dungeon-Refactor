@@ -1,14 +1,5 @@
 package DungeonSource;
 
-/**
- * Title:
- * Description:
- * Copyright:    Copyright (c) 2001
- * Company:
- * @author
- * @version 1.0
- */
-
 public class Gremlin extends Monster
 {
 
@@ -17,16 +8,16 @@ public class Gremlin extends Monster
 		super("Gnarltooth the Gremlin", 70, 5, .8, 15, 30);
 		monsterHeal(.4, 20, 40);
 
-    }//end constructor
-
+    }
+    
+	@Override
 	public void attack(DungeonCharacter opponent)
 	{
-		// changing the name to original name 
 		System.out.println("Germlin" + " jabs his kris at " +
 							opponent.getName() + ":");
 		super.attack(opponent);
 
-	}//end override of attack
+	}
 
 
-}//end class Gremlin
+}

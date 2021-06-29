@@ -21,6 +21,7 @@ public class Skeleton extends Monster {
 	}// end override of attack
 
 	// -----------------------------------------------------------------
+	@Override
 	public void heal() {
 		boolean canHeal;
 		int healPoints;

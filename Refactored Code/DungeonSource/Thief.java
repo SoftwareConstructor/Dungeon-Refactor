@@ -1,14 +1,5 @@
 package DungeonSource;
 
-/**
- * Title:
- * Description:
- * Copyright:    Copyright (c) 2001
- * Company:
- * @author
- * @version 1.0
- */
-
 public class Thief extends Hero
 {
 
@@ -18,7 +9,7 @@ public class Thief extends Hero
 
 
 
-    }//end constructor
+    }
 
 	public void surpriseAttack(DungeonCharacter opponent)
 	{
@@ -29,7 +20,7 @@ public class Thief extends Hero
 								name + " gets an additional turn.");
 			numTurns++;
 			attack(opponent);
-		}//end surprise
+		}
 		else if (surprise >= .9)
 		{
 			System.out.println("Uh oh! " + opponent.getName() + " saw you and" +
@@ -39,9 +30,9 @@ public class Thief extends Hero
 		    attack(opponent);
 
 
-	}//end surpriseAttack method
+	}
 
-
+	@Override
     public void battleChoices(DungeonCharacter opponent)
 	{
 		super.battleChoices(opponent);
@@ -63,7 +54,7 @@ public class Thief extends Hero
 			        break;
 			    default:
 			        System.out.println("invalid choice!");
-		    }//end switch
+		    }
 
 			numTurns--;
 			if (numTurns > 0)
