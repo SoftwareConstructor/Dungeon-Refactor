@@ -87,4 +87,16 @@ public class Sorceress extends Hero
 
     }//end overridden method
 
+	@Override
+	void subtractHitPoints() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	void battleChoices() {
+		// TODO Auto-generated method stub
+		
+	}
+
 }//end class

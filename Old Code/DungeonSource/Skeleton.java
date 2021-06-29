@@ -26,5 +26,11 @@ public class Skeleton extends Monster
 
 	}//end override of attack
 
+	@Override
+	void subtractHitPoints() {
+		// TODO Auto-generated method stub
+		
+	}
+
 
 }//end class Skeleton
