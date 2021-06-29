@@ -18,6 +18,7 @@ public class Gremlin extends Monster
 
     }//end constructor
 
+	@Override
 	public void attack(DungeonCharacter opponent)
 	{
 		// changing the name to original name 
@@ -26,6 +27,32 @@ public class Gremlin extends Monster
 		super.attack(opponent);
 
 	}//end override of attack
+
+		// -----------------------------------------------------------------
+		public void heal() {
+			boolean canHeal;
+			int healPoints;
+	
+			canHeal = (Math.random() <= chanceToHeal) && (hitPoints > 0);
+	
+			if (canHeal) {
+				healPoints = (int) (Math.random() * (maxHeal - minHeal + 1)) + minHeal;
+				addHitPoints(healPoints);
+				System.out.println(name + " healed itself for " + healPoints + " points.\n"
+						+ "Total hit points remaining are: " + hitPoints);
+				System.out.println();
+			} // end can heal
+	
+		}// end heal method
+	
+		// -----------------------------------------------------------------
+		@Override
+		public void subtractHitPoints(int hitPoints) {
+			super.subtractHitPoints(hitPoints);
+			heal();
+	
+		}// end method
+
 
 
 }//end class Gremlin
