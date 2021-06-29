@@ -51,4 +51,15 @@ public void subtractHitPoints(int hitPoints)
 
 	}
 
+	public int addHP(int amountHealed) {
+        super.hitPoints += amountHealed;
+        return 0;
+    }
+ 
+    public int subHP(int damageDealt) {
+        super.hitPoints -= damageDealt;
+        return 0;
+    }
+
+
 }
