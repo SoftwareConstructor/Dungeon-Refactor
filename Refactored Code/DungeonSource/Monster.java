@@ -16,17 +16,20 @@ public abstract class Monster extends DungeonCharacter
 	protected int minHeal, maxHeal;
 
 //-----------------------------------------------------------------
-  public Monster(String name, int hitPoints, int attackSpeed,
-				     double chanceToHit, double chanceToHeal,
-					 int damageMin, int damageMax,
-					 int minHeal, int maxHeal)
+  protected Monster(String name, int hitPoints, int attackSpeed,
+				     double chanceToHit,
+					 int damageMin, int damageMax
+					 )
   {
 	super(name, hitPoints, attackSpeed, chanceToHit, damageMin, damageMax);
+  }//end monster construcotr
+
+  //new explicit method
+  public void monsterHeal(double chanceToHeal, int minHeal, int maxHeal) {
 	this.chanceToHeal = chanceToHeal;
 	this.maxHeal = maxHeal;
 	this.minHeal = minHeal;
-
-  }//end monster construcotr
+  }
 
 //-----------------------------------------------------------------
   public void heal()
@@ -49,6 +52,7 @@ public abstract class Monster extends DungeonCharacter
   }//end heal method
 
 //-----------------------------------------------------------------
+@Override
  public void subtractHitPoints(int hitPoints)
  {
 		super.subtractHitPoints(hitPoints);
