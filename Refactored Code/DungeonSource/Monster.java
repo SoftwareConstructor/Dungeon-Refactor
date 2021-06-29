@@ -1,10 +1,22 @@
 package DungeonSource;
+
+/**
+ * Title:
+ * Description:
+ * Copyright:    Copyright (c) 2001
+ * Company:
+ * @author
+ * @version 1.0
+ */
+
+
 public abstract class Monster extends DungeonCharacter
 {
 	protected double chanceToHeal;
 	protected int minHeal;
 	protected int maxHeal;
 
+//-----------------------------------------------------------------
   protected Monster(String name, int hitPoints, int attackSpeed,
 				     double chanceToHit, double chanceToHeal,
 					 int damageMin, int damageMax,
@@ -15,8 +27,9 @@ public abstract class Monster extends DungeonCharacter
 	this.maxHeal = maxHeal;
 	this.minHeal = minHeal;
 
-  }
+  }//end monster construcotr
 
+//-----------------------------------------------------------------
   public void heal()
   {
 	boolean canHeal;
@@ -31,13 +44,18 @@ public abstract class Monster extends DungeonCharacter
 		System.out.println(name + " healed itself for " + healPoints + " points.\n"
 							+ "Total hit points remaining are: " + hitPoints);
 		System.out.println();
-	}
-  }
-@Override
+	}//end can heal
+
+
+  }//end heal method
+
+//-----------------------------------------------------------------
  public void subtractHitPoints(int hitPoints)
  {
 		super.subtractHitPoints(hitPoints);
 		heal();
- }
 
-}
+ }//end method
+
+
+}//end Monster class

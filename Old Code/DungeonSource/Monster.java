@@ -15,7 +15,6 @@ public abstract class Monster extends DungeonCharacter
 	protected double chanceToHeal;
 	protected int minHeal, maxHeal;
 
-//-----------------------------------------------------------------
   public Monster(String name, int hitPoints, int attackSpeed,
 				     double chanceToHit, double chanceToHeal,
 					 int damageMin, int damageMax,
@@ -28,7 +27,6 @@ public abstract class Monster extends DungeonCharacter
 
   }//end monster construcotr
 
-//-----------------------------------------------------------------
   public void heal()
   {
 	boolean canHeal;
