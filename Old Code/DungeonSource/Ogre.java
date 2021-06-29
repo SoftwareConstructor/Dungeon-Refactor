@@ -33,5 +33,11 @@ public class Ogre extends Monster
 		
 	}
 
+	@Override
+	void heal() {
+		// TODO Auto-generated method stub
+		
+	}
+
 
 }//end Monster class

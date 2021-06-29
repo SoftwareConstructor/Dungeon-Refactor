@@ -82,4 +82,18 @@ public class Warrior extends Hero
 
     }//end battleChoices method
 
+
+	@Override
+	void subtractHitPoints() {
+		// TODO Auto-generated method stub
+		
+	}
+
+
+	@Override
+	void battleChoices() {
+		// TODO Auto-generated method stub
+		
+	}
+
 }//end Hero class

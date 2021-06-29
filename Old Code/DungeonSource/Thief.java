@@ -72,4 +72,16 @@ public class Thief extends Hero
 		} while(numTurns > 0);
 
     }
+
+	@Override
+	void subtractHitPoints() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	void battleChoices() {
+		// TODO Auto-generated method stub
+		
+	}
 }

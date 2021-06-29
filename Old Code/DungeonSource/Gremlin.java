@@ -54,6 +54,12 @@ public class Gremlin extends Monster
 	
 		}// end method
 
+		@Override
+		void subtractHitPoints() {
+			// TODO Auto-generated method stub
+			
+		}
+
 
 
 }//end class Gremlin
