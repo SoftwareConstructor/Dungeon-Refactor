@@ -10,7 +10,7 @@ package DungeonSource;
  */
 
 
-public abstract class Monster extends abstractMonster
+public abstract class Monster extends DungeonCharacter
 {
 	protected double chanceToHeal;
 	protected int minHeal, maxHeal;

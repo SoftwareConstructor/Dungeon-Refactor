@@ -41,15 +41,6 @@ public class Thief extends Hero
 
 	}//end surpriseAttack method
 
-	public int addHP(int amountHealed) {
-		super.hitPoints += amountHealed;
-		return 0;
-	}
-
-	public int subHP(int damageDealt) {
-		super.hitPoints -= damageDealt;
-		return 0;
-	}
 
     public void battleChoices(DungeonCharacter opponent)
 	{
@@ -81,16 +72,4 @@ public class Thief extends Hero
 		} while(numTurns > 0);
 
     }
-
-	@Override
-	void subtractHitPoints() {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	void battleChoices() {
-		// TODO Auto-generated method stub
-		
-	}
 }

@@ -27,7 +27,7 @@ package DungeonSource;
  */
 
 
-public abstract class Hero extends abstractHero
+public abstract class Hero extends DungeonCharacter
 {
 	// changing the visibility to private from protected 
 	private double chanceToBlock;
