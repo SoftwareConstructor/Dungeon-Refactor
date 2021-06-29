@@ -48,8 +48,15 @@ public class Warrior extends Hero
 		super.attack(opponent);
 	}//end override of attack method
 
+	public int addHP(int amountHealed) {
+		super.hitPoints += amountHealed;
+		return 0;
+	}
 
-
+	public int subHP(int damageDealt) {
+		super.hitPoints -= damageDealt;
+		return 0;
+	}
 
     public void battleChoices(DungeonCharacter opponent)
 	{
@@ -81,5 +88,19 @@ public class Warrior extends Hero
 		} while(numTurns > 0);
 
     }//end battleChoices method
+
+
+	@Override
+	void subtractHitPoints() {
+		// TODO Auto-generated method stub
+		
+	}
+
+
+	@Override
+	void battleChoices() {
+		// TODO Auto-generated method stub
+		
+	}
 
 }//end Hero class
